@@ -11,14 +11,20 @@ If QML works fine on your mashine, or SDDM works without freezes with any theme,
 
 SDDM Hills Theme also supports looped video background.
 
+![hills.jpg](https://github.com/zettdaymond/sddm-hills-theme/blob/master/hills.jpg)
 
-# Instalation. #
+# Instalation #
+Clone repo to your machine
+```
+git clone https://github.com/zettdaymond/sddm-hills-theme
+```
 
+Move ```sddm-hills-theme``` to your sddm themes directory, for example:
+```
+# mv sddm-hills-theme /usr/share/sddm/themes/hills
+```
 
-
-# Configuration #
-
-Open ```/etc/sddm.conf``` in your favorite text editor and change follow strings :
+Open SDDM configuration file, for example ```/etc/sddm.conf``` in your favorite text editor and change follow strings :
 
 ```
 [Theme]
@@ -30,9 +36,12 @@ Current=hills
 
 ## Default ##
 
-SDDM Hills theme supports video background. To setup default theme video you need follow:
+SDDM Hills theme supports video background. To setup theme's default video you need follow:
 
-Go to the installed theme folder, for example ```cd /usr/share/sddm/themes/hills```
+Go to the installed theme folder, for example 
+```
+cd /usr/share/sddm/themes/hills
+```
 
 Start script to fetch video:
 
@@ -43,7 +52,7 @@ chmod +x ./fetchvideo.sh
 
 Script will download and save video file as ``` ./resources/background/background.mp4 ``` 
 
-Open file ```theme.conf``` in your favorite text editor by root.
+Open file ```theme.conf``` in your favorite text editor.
 
 Change lines like follows:
 
@@ -56,11 +65,16 @@ background_image=resources/background/background.jpg
 use_video_instead_image=true
 ```
 
+**ATTENTION!!!** Video does not shown in SDDM greeter preview mode. You need to re-login to see changes.
+
 ## Custom ##
 
 Unfortunly, on moment of theme creation, Qt QML does not allow smooth video loops using standart QML API. To prevent this, I decide to place 'dummy' image as a background. If you decide to use your video file, you should do the same. 
 
-Go to the installed theme folder, for example ```cd /usr/share/sddm/themes/hills```
+Go to the installed theme folder, for example 
+```
+cd /usr/share/sddm/themes/hills
+```
 
 Save your video file as ```./resources/background/background.mp4```
 
