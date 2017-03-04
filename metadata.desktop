@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Hills
+Description=Hiils theme with performance fix on intel i915 cards.
+Author=Zett Daymond
+Copyright=(c) 2015, Zett Daymond
+License=MIT
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/sddm/sddm
+Screenshot=hills.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=zettday@gmail.com
+Theme-Id=hills
+Theme-API=2.0
